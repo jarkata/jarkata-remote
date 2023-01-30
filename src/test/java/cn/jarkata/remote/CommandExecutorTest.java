@@ -8,7 +8,8 @@ public class CommandExecutorTest {
 
     @Test
     public void exec() throws Exception {
-        Result result = CommandExecutor.exec(Arrays.asList("/bin/sh", "-c", "ps -ef| grep java"), 10);
+        Result result = CommandExecutor.exec(Arrays.asList("/bin/zsh", "-c", "ps -ef| grep lira"), 10);
         System.out.println(result.getCode());
+        System.out.println(result);
     }
 }
