@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class CommandExecutor {
+public class CmdExecutor {
 
     public static Result exec(List<String> commands, int timeout) throws Exception {
         ProcessBuilder processBuilder = new ProcessBuilder(commands);
